@@ -1,4 +1,4 @@
-# Convenient PHP wrapper to the Mono API
+# Convenient PHP wrapper to abokiFX API
 ![run-tests](https://github.com/digikraaft/abokifx-php/workflows/run-tests/badge.svg)
 [![Build Status](https://travis-ci.com/digikraaft/abokifx-php.svg?token=6YhB5FxJsF7ENdMM7Mzz&branch=master)](https://travis-ci.com/digikraaft/abokifx-php)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/?branch=master)
