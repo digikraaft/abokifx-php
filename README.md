@@ -1,8 +1,8 @@
 # Convenient PHP wrapper to abokiFX API
 ![run-tests](https://github.com/digikraaft/abokifx-php/workflows/run-tests/badge.svg)
-[![Build Status](https://travis-ci.com/digikraaft/abokifx-php.svg?token=6YhB5FxJsF7ENdMM7Mzz&branch=master)](https://travis-ci.com/digikraaft/abokifx-php)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/?branch=master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://api.travis-ci.com/digikraaft/abokifx-php.svg?branch=main&status=passed)](https://app.travis-ci.com/github/digikraaft/abokifx-php)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/digikraaft/abokifx-php)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/digikraaft/abokifx-php/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/g/digikraaft/abokifx-php)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 This package provides an expressive and convenient way to interact with the [abokiFX API](https://https://www.abokifx.com/api_references/).
