@@ -21,7 +21,15 @@ All APIs documented in abokiFX's [API Reference](https://https://www.abokifx.com
 Before using any of the endpoints, you will have to obtain your API token by contacting the abokiFX [marketing team](marketing@abokifx.com) via marketing@abokifx.com
 
 ### Usage
+```php
+use Digikraaft\Abokifx\Abokifx;
+use Digikraaft\Abokifx\Rate;
 
+//set API token
+Abokifx::setApiToken('apitokenfromabokifx');
+
+$response = Rate::current();
+```
 ### Available Methods
 A list of the available methods are documented below:
 
@@ -31,11 +39,17 @@ A list of the available methods are documented below:
 
 #### Rate
 * `current(): Array|Object`
-* `parallel(): Array|Object`
+* `otherParallel(): Array|Object`
 * `previous(): Array|Object`
 * `withDate(array params) : Array|Object`
 
-This package returns the exact response from the abokiFX API but as the `stdClass` type.
+This package returns the exact response from the abokiFX API but as the `stdClass` type or `array`. The package returns the response as `array` by default. If you want to return the response as `object`, simple set the response type before calling the endpoint like this:
+
+```php
+use Digikraaft\Abokifx\Abokifx;
+
+Abokifx::setResponseType(Abokifx::OBJECT_RESPONSE);
+```
 
 ## Testing
 

@@ -60,14 +60,14 @@ trait Request
      *
      * @return array|object (the JSON response as array or object)
      */
-    public static function staticRequest($method, $url, $params = [], $return_type = 'obj')
+    public static function staticRequest($method, $url, $params = [], $return_type = Abokifx::ARRAY_RESPONSE)
     {
-        if ($return_type != 'arr' && $return_type != 'obj') {
-            throw new InvalidArgumentException('Return type can only be obj or arr');
+        if (Abokifx::$responseType != Abokifx::ARRAY_RESPONSE && Abokifx::$responseType != Abokifx::OBJECT_RESPONSE) {
+            throw new InvalidArgumentException('Return type can only be '. Abokifx::OBJECT_RESPONSE .' or '. Abokifx::ARRAY_RESPONSE);
         }
         static::setHttpResponse($method, $url, $params);
 
-        if ($return_type == 'arr') {
+        if (Abokifx::$responseType == Abokifx::ARRAY_RESPONSE) {
             return static::getResponseData();
         }
 

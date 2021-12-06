@@ -40,7 +40,7 @@ class Rate extends ApiResource
      * @throws Exceptions\IsNullException
      * @link https://www.abokifx.com/api_references
      */
-    public static function parallel()
+    public static function otherParallel()
     {
         $url = self::endPointUrl("otherparallel");
 
@@ -54,7 +54,7 @@ class Rate extends ApiResource
      * @throws Exceptions\IsNullException
      * @link https://www.abokifx.com/api_references
      */
-    public static function withDate(array $params = null)
+    public static function withDate(array $params)
     {
         //24-04-2020
         self::validateParams($params);
